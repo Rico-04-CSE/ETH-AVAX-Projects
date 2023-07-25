@@ -1,1 +1,1 @@
-# ETH-AVAX-Projects
+# ETH-AVAX-Module 1 
