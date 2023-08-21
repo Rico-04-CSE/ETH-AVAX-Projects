@@ -28,7 +28,7 @@ _This project uses a simple smart contract on Ethereum that uses the `require()`
 - _Once you are on the **Remix website**, create a new file by clicking on the **"+"** icon in the left-hand sidebar._
 - _Now make a folder and inside the folder create and save the file with a **.sol** extension **( For eg: Module 1 Project.sol).**_
 - _To compile the code, click on the **"Solidity Compiler"** tab in the left-hand sidebar. Make sure the **"Compiler"** option is set to the **("0.8.18")** or the latest version of it and then click on the **"Compile Module 1 Project.sol" button.**_
-- _Once you are done with the code, you can deploy the contract by clicking on the **"Deploy & Run Transactions"** tab in the left-hand sidebar. Select the **"Deposit"** contract from the dropdown menu, and then click on the **"Deploy"** button._
+- _Once you are done with the code, you can deploy the contract by clicking on the **"Deploy & Run seatBooking"** tab in the left-hand sidebar. Select the **"seatBooking"** contract from the dropdown menu, and then click on the **"Deploy"** button._
 - _After successful deployment of the contract you can interact with its function from the remix IDE._
 
   
