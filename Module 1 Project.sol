@@ -1,20 +1,20 @@
 // SPDX-License-Identifier: MIT
 pragma solidity 0.8.18;
 
-contract Deposit {
-    uint public totalDeposits;
-    mapping(address => uint256) public balances;
+contract Booking {
+    uint public totalBooking;
+    mapping(address => bool) public hasBooked;
 
-    function transaction() public payable {
-        require(balances[msg.sender] == 0, "Successful Transaction"); // Check if the sender's transaction is successful
+    function seatBooking() public payable {
+        require(!hasBooked[msg.sender], "Already Booked"); // Check if the sender's transaction is successful
         
-        totalDeposits++;
-        balances[msg.sender] = 100;
+        totalBooking++;
+        hasBooked[msg.sender] = true;
 
-        if (totalDeposits > 3) {
-            revert("Transaction limit exceeded"); //Revert if the transcation limit exceeded
+        if (totalBooking > 2) {
+            revert("Booking limit has exceeded"); //Revert if the transcation limit exceeded
         }
 
-        assert(totalDeposits <= 3); //Make sure that the transactions does not exceed the given limit
+        assert(totalBooking <= 2); //Make sure that the transactions does not exceed the given limit
     }
 }
